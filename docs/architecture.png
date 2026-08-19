@@ -1,0 +1,39 @@
+                  ECONOMIC OBJECTIVE
+                         |
+                         v
+                    ┌─────────┐
+                    │   GA    │
+                    └────┬────┘
+                         |
+                  Optimal operating
+                       points
+                         |
+                         v
+                    ┌─────────┐
+                    │   ANN   │
+                    │Surrogate│
+                    └────┬────┘
+                         |
+                  TSMR SP / TWGS SP
+                         |
+                         v
+                ┌─────────────────┐
+                │ FUZZY PID       │
+                │ Gain Scheduling  │
+                └───────┬─────────┘
+                        |
+              ┌─────────┴─────────┐
+              ↓                   ↓
+         PID Controller      PID Controller
+              ↓                   ↓
+          QSMR                 QWGS
+              ↓                   ↓
+         ┌─────────┐        ┌─────────┐
+CH4 ───> │ SMR PFR │ ─────> │ WGS CSTR│
+         └─────────┘        └────┬────┘
+                                  ↓
+                            ┌──────────┐
+                            │  FLASH   │
+                            └────┬─────┘
+                                 ↓
+                            H2-rich stream
